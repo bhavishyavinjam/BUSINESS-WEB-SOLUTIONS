@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>forms</title>
+</head>
+<body>
+    <form action="" method="get">
+        <div>
+            <input type="text" value="hello world" placeholder="enter a value"> <!--the text written by default without any user-->
+            <input type="text" placeholder="enter a value"><!--here, the use will write the value in the text box-->
+            <input required name="text" placeholder="enter a value"><!--here, entering some text is mandatory, otherwise the form will not be submitted-->
+            <input type="password" placeholder="enter password">
+            <input type="password" value="password" placeholder="enter password">
+            <input required password="password" value="password" placeholder="enter password">
+        </div>
+        <div>
+            <textarea cols="50" rows="20" >text</textarea>
+            <textarea cols="80" rows="10" placeholder="write text here">text
+white space matter here.
+            </textarea>
+        </div>
+        <div>
+            <button type="button">click me!</button>
+            <button type="reset">reset button</button><!--this button resets all the values-->
+            <button type="submit">submit</button><!--this button reloads the page-->
+        </div>
+        <div>
+            <select name="select_option">
+                <option value="disabled" disabled="disabled">disabled</option>
+                <option value="value1">this is value1</option>
+                <option value="value2">this is value2</option>
+                <option value="value3">this is value3</option>
+            </select>
+        </div>
+        <div>
+            <select name="select_option">
+                <option value="value1">this is value1</option>
+                <option value="value2">this is value2</option>
+                <option value="value3">this is value3</option>
+                <option value="disabled" disabled="disabled">disabled</option>
+                <option value="default option" selected="selected">selected by default</option><!--the option is selected by default-->
+            </select>
+        </div>
+    </form>
+</body>
+</html>
