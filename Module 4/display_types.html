@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>display types</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        div.div3 {
+            display: inline; /*div which is block element changed to inline element by this property*/
+            color: greenyellow;
+            border-style: solid;
+            border-color: teal;
+            border-width: 5px;
+            width: 200px; /* width and height has no effect because we used inline. so it remained as same without using the widtha nd height sizes */
+            height:200px;
+        }
+        div.div4 {
+            display: inline-block;
+            color:mediumslateblue;
+            border-style: solid;
+            border-color:darksalmon;
+            border-width: 5px;
+            width: 200px; /*width and height properties are enabled because we use inline block element.It can also be enabled for block element. so it became square*/
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>h1 is block element</h1>we can write text before
+    <span>span is inline element</span> and after it doesnot take space
+    <div>this is div stmnt 1. div is also block element</div>
+    <div class="div3">this is div stmnt 3</div>
+    <div class="div4">this is div stmnt 4</div>
+</body>
+</html>

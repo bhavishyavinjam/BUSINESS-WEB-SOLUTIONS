@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>box shadows</title>
+    <style>
+    #box {
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        background-image: url("backgroundimage.jpg");
+        background-position: center center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        box-shadow: 5px 5px 10px red;
+    }
+    #box2 {
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        background-image: url("backgroundimage.jpg");
+        background-position: center center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 0px 50% 0px 50%;
+        box-shadow: 5px 5px 15px inset darkgrey; /* format: x axis size y-axis size blur inset color.inset is containing a shadow inside the box*/
+
+    }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <div id="box2"></div>
+</body>
+</html>
