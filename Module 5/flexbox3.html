@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox3</title>
+    <style>*{
+        box-sizing: border-box; 
+    }
+    #container{
+        display: flex; /*gives the text side by side*/
+        flex-wrap: wrap; /*if anything goes over 100% then just bump it down to the next line.*/
+    }
+    /*#container div{
+        border: 1px solid red;
+    }*/
+    .header{
+        flex-basis: 100%;
+        flex-shrink: 1;
+        flex-grow: 0;
+        background-color: brown;
+        color: chartreuse;
+        padding: 20px;
+    }
+    .navigation{
+        flex: basis 20%;
+        flex-grow:0;
+        flex-shrink:1;
+        padding: 10px; /*for looking good*/
+    }
+    .content{
+        flex-basis:80%;
+        flex-shrink:0;
+        flex-grow: 1;
+        padding: 10px; /*for looking good*/
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="header">header</div>
+        <div class="navigation">navigation box</div>
+        <div class="content">
+            content box
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quisquam necessitatibus ipsa officiis laudantium quo veniam tempora, incidunt enim deserunt. Eos qui quis nisi unde magni, officia facere et similique.</p>
+            <h3>content box 2</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam aspernatur nemo quis at totam voluptatum, optio mollitia, accusantium dolore beatae autem eius amet rerum velit molestias, quidem unde aut voluptates!</p>
+        </div>
+    </div>
+</body>
+</html>

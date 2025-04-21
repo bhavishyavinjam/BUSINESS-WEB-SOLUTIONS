@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #grid{
+            display: grid; /*turns the container into a grid.*/
+            grid-row-gap: 20px; /* space between grid row items */
+            grid-column-gap: 20px;/* space between grid column items */
+            grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+            grid-template-rows: repeat(4, 100px); /* 3 rows of 100px height. means one box is 100px height */
+            
+
+        }
+        .item{
+            border: 2px solid red;
+        }
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3; /* spans column 1 and 2. it takes 3 columns. ist box space 1st and 2nd box and the 2nd box , total 3 columns. so 1 covers this whole space */
+            
+        }
+        .item2{
+            grid-row-start: 2;
+            grid-row-end: 4; /* spans row 2 and 3 */
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="grid">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+
+    </div>
+</body>
+</html>

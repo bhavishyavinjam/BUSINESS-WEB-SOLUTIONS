@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>box model</title>
+    <style>
+        .box{
+            border: 5px;
+            padding: 30px;
+            height: 300px;
+            width:300px;
+            border-color: blueviolet; /*it gives 370 box size increases*/
+            border-style: solid;
+        }
+        .box2{
+            border: 5px;
+            padding: 30px;
+            height: 300px;
+            width:300px;
+            border-color: red;
+            border-style:solid;
+            box-sizing: border-box; /*it gives total under 300*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">hello</div>
+    <div class="box2">hello</div>
+</body>
+</html>

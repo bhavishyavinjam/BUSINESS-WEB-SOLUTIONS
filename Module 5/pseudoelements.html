@@ -1,0 +1,60 @@
+<!--example 1-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Example</title>
+  <style>
+    p::before {
+      content: "Before - "; 
+      /*It's a pseudo-element: "pseudo" means fake or virtual. It creates a fake element inside the element, right at the beginning.It can hold text, or be used to draw shapes, icons, or decoration.
+        It’s like saying:“Before this element’s real content starts, I want to sneak in this extra stuff.”*/
+    }
+
+    p::after {
+      content: " - After";
+      /*It’s the opposite of ::before. It creates a fake piece of content at the end of the real content inside the element.*/
+    }
+
+    p:hover {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Hover over this text</p>
+
+</body>
+</html>
+-->
+
+<!--example 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover Without Affecting Before/After</title>
+  <style>
+
+    p::before {
+      content: "Before - ";
+      color: green; /*if colour fixes then before and after text will not change*/
+    }
+
+    p::after {
+      content: " - After";
+      color: orange;
+    }
+
+    p:hover {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Hover over this text</p>
+
+</body>
+</html>

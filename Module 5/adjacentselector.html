@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adjacent Sibling Selector Example</title>
+  <style>
+    h1 + p {
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Heading 1</h1>
+<p>This paragraph will be blue (it comes immediately after h1).</p> <!-- ✅ Selected --><!--if this p is in nested like with div or any other element then it will also not be blue because it's nested. it will select right after the selected element but not nested-->
+
+<span>Some text</span>
+<p>This paragraph will NOT be blue (if there is no span in between also this p will not select because only 1st p will get selected).</p> <!-- ❌ Not selected -->
+
+<p>This paragraph will also NOT be blue (because it’s not immediately after h1).</p> <!-- ❌ Not selected -->
+
+</body>
+</html>

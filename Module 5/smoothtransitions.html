@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smooth transitions</title>
+    <style>
+        a{
+            background-color:#fff;
+            color:#000;
+            text-decoration: none;
+            border: 0px solid black;/*if you want border to be visible then add 2px or 5px or something. if don't want it to be visible then add 0px*/
+            padding: 10px 10px;
+            margin: 10px 15px;
+            display: inline-block;
+            transition: background-color 1.0s,
+            color 0.5s,
+            padding 0.2s ;/*in first line background color will only fade in and fade out. in second line the text will fade in and out. third line the padding(the box size increases) will move faster or slower along the time mentioned*/            
+        }
+        a:hover{
+            background-color: brown;
+            color:#fff;
+            padding: 10px 30px; /*when we place the mouse on the button then the size increses*/
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="button">click me</a>
+</body>
+</html>

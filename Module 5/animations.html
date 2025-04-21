@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        .box{
+            width:300px;
+            height:300px;
+            border: 10px solid brown;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            animation-name:rolling;
+            animation-duration: 5s;
+            top:0%;
+            left:0%;
+            animation-iteration-count: infinite; /*it rotates infinite times*/
+            animation-direction: alternate;/*it moves backwards*/
+        }
+        /* example 1
+        @keyframes rolling{
+            from{
+                left:0%;
+                top:0%;
+            }
+            to{
+                left:100%;
+            }
+        }
+        */
+        /* example 2
+        @keyframes rolling{
+            0%{
+                top: 0%;
+                left:0%;
+
+            }
+            50%{
+                background-color: red;
+
+            }
+            100%{
+                left:100%;
+                background-color: aqua;
+            }
+        }
+        */
+        @keyframes rolling{
+            0% {
+                top: 0%;
+                left: 0%;
+                transform: translate(0, 0);
+            }
+            25% {
+                top: 0%;
+                left: 100%;
+                transform: translateX(-100%); /*it shows in the page it will not go out of the page like previous example. so we use translate*/
+            }
+            50% {
+                top: 100%;
+                left: 100%;
+                transform: translate(-100%, -100%);
+            }
+            75% {
+                top: 100%;
+                left: 0%;
+                transform: translateY(-100%);
+            }
+            100% {
+                top: 0%;
+                left: 0%;
+                transform: translate(0, 0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

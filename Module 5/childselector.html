@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Selector Example</title>
+  <!--The child selector targets only the direct children of a parent element but not the nested elements.-->
+  <style>
+    div > p {
+      color: red;
+    }
+  </style>
+  
+</head>
+<body>
+
+<div>
+  <p>This will be red (direct child of the div).</p>
+  <span> this is span stmt</span>
+  <p>this will be red though the span element is between</p>
+  <div>
+    <p>This will NOT be red (nested inside another div).</p>
+  </div>
+</div>
+
+</body>
+</html>

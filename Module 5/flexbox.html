@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        #container{
+            display: flex; /*gives the text side by side*/
+        }
+        #container div{
+            border: 1px solid red;
+            flex-basis: 50%;
+            flex-shrink: 0; /*now if we mention shrink and grow then the this left box will be only 50% it will not shrink nor grow. so left is 50% and right is 95% so the page increases*/
+            flex-grow: 0;
+
+        }
+        #container div.right{
+            flex-basis: 95%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>

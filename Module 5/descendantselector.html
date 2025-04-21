@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*The descendant selector targets all matching elements inside a parent element, regardless of their depth.*/
+    /*Both <p> tags inside the <div> are blue because they are descendants of the <div>, even if one is nested inside another <div></div>*/
+    div p {
+      color: blue;
+    }
+  </style>
+  <title>Descendant Selector Example</title>
+</head>
+<body>
+    <div>
+    <p>This will be blue (directly inside the div).</p>
+    <div>
+        <p>This will also be blue (inside a nested div).</p>
+    </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;/*because the border box takes 1px so if we add this box sizing then all the boxes of left right and center takes under 50%*/
+        /*before box sizing is mentioned then the box size not 50 % it is 51% because the box border is 1 % . so if we add box sizing then all takes under 50 %*/
+        }
+        #container{
+            display: flex; /*gives the text side by side*/
+            flex-wrap: wrap; /*if anything goes over 100% then just bump it down to the next line.*/
+        }
+        #container div{
+            border: 1px solid red;
+            flex-basis: 50%;
+            flex-shrink: 0; 
+            flex-grow: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>left</div>
+        <div>center</div>
+        <div>right</div>
+        <div>right</div><!--these keep stacking down-->
+        <div>right</div>
+        <div>right</div>
+        <div>right</div>
+
+        
+    </div>
+</body>
+</html>
